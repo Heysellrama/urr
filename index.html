@@ -116,7 +116,7 @@
         }
 
         /* ========================================================= */
-        /* HALAMAN 4: 3D INTERACTIVE STACK CAROUSEL (SESUAI GAMBAR)  */
+        /* HALAMAN 4: 3D INTERACTIVE STACK CAROUSEL                  */
         /* ========================================================= */
         .stack-select-btn {
             padding: 6px 16px;
@@ -363,7 +363,7 @@
         <!-- Creator Attribution Pill & Music Toggle -->
         <div class="pointer-events-auto flex items-center gap-2">
             <!-- Badge Keterangan Pembuat Kartu -->
-            <button onclick="openCreatorModal()" title="Klik untuk ubah nama pembuat kartu" class="bg-white/85 hover:bg-lilac-100 backdrop-blur-md border border-lilac-200 text-purple-800 px-3.5 py-1.5 rounded-full shadow-sm transition-all active:scale-95 flex items-center gap-1.5 text-xs font-semibold">
+            <button onclick="openCreatorModal()" title="Info pembuat kartu" class="bg-white/85 hover:bg-lilac-100 backdrop-blur-md border border-lilac-200 text-purple-800 px-3.5 py-1.5 rounded-full shadow-sm transition-all active:scale-95 flex items-center gap-1.5 text-xs font-semibold">
                 <span>💜</span>
                 <span><span id="header-creator-name" class="underline decoration-dotted decoration-purple-400 font-bold">amaa</span></span>
             </button>
@@ -395,7 +395,7 @@
                     <span>✦</span>
                 </div>
 
-                <!-- Cute Gift Illustration (Seperti Awal) -->
+                <!-- Cute Gift Illustration -->
                 <div class="relative w-32 h-32 mx-auto my-3 flex items-center justify-center">
                     <div class="absolute inset-0 bg-lilac-200/50 rounded-full blur-xl animate-pulse"></div>
                     <div class="relative bg-gradient-to-br from-lilac-100 to-purple-200 w-28 h-28 rounded-3xl border-2 border-white shadow-inner flex items-center justify-center transform -rotate-3 hover:rotate-3 transition-transform duration-300">
@@ -420,13 +420,11 @@
                     <span>penceten lurr</span>
                     <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </button>
-
-                <!-- Minimalist Creator Signature -->
             </div>
         </section>
 
         <!-- ========================================================= -->
-        <!-- HALAMAN 2: 1 FOTO BESAR + UCAPAN "HAPPYY BIRTHDAYYY..."   -->
+        <!-- HALAMAN 2: 1 FOTO BESAR (FOTO ANDA) + UCAPAN              -->
         <!-- ========================================================= -->
         <section id="page-2" class="page-section flex-col items-center text-center w-full">
             <div class="relative bg-white/90 backdrop-blur-md border-2 border-lilac-200 rounded-[2.2rem] p-6 sm:p-9 shadow-[0_20px_50px_rgba(168,85,247,0.14)] w-full max-w-lg">
@@ -443,13 +441,13 @@
                     <div class="washi-tape w-24 h-5 absolute -top-2.5 -left-4 transform -rotate-45 z-10 rounded-sm"></div>
                     <div class="washi-tape w-24 h-5 absolute -bottom-2.5 -right-4 transform -rotate-45 z-10 rounded-sm"></div>
 
-                    <!-- Foto Container -->
+                    <!-- Foto Container (Menggunakan Foto Anda) -->
                     <div class="relative aspect-[4/4] w-full overflow-hidden rounded-xl bg-lilac-100 group">
                         <img id="hero-photo" 
-                             src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
+                             src="ft1.jpeg" 
                              onerror="this.src='https://placehold.co/600x600/ebd9ff/7e22ce?text=Little+Purple+%F0%9F%92%9C'"
                              alt="Birthday Girl" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                             class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105">
                     </div>
 
                     <!-- Tulisan Tangan di Bawah Polaroid -->
@@ -553,7 +551,7 @@
                     </button>
                     <button onclick="goToPage(4)" class="flex-1 bg-gradient-to-r from-purple-500 to-lilac-500 hover:from-purple-600 hover:to-lilac-600 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg shadow-purple-200 transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2 text-sm sm:text-base">
                         <span>lanjutt lurr</span>
-                        <span></span>
+                        <span>📸</span>
                     </button>
                 </div>
             </div>
@@ -582,11 +580,11 @@
                 <!-- 3D SELECTION STACK STAGE -->
                 <div class="relative my-2 rounded-2xl border-2 border-lilac-200 shadow-inner bg-purple-100/70 overflow-hidden">
                     <div class="stack-stage" id="moment-stack">
-                        <!-- Moment 1 -->
+                        <!-- Moment 1 (Ganti src dengan nama file foto ke-1 Anda) -->
                         <article class="stack-card is-active" data-index="0" data-selected="true" onclick="selectStackCard(0)">
                             <img id="moment-photo-1" 
-                                 src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" 
-                                 onerror="this.src='https://placehold.co/500x700/e9d5ff/6b21a8?text=Moment+01+%F0%9F%92%9C'"
+                                 src="ft3.jpeg" 
+                                 onerror="this.src='https://placehold.co/500x700/e9d5ff/6b21a8?text=Foto+Moment+01+%F0%9F%92%9C'"
                                  alt="Moment 1">
                             <div class="stack-overlay bg-gradient-to-t from-purple-950/85 via-purple-950/20 to-transparent flex flex-col justify-between p-4 sm:p-5 text-left">
                                 <div class="flex justify-between items-center">
@@ -600,11 +598,11 @@
                             </div>
                         </article>
 
-                        <!-- Moment 2 -->
+                        <!-- Moment 2 (Ganti src dengan nama file foto ke-2 Anda) -->
                         <article class="stack-card is-next" data-index="1" data-selected="false" onclick="selectStackCard(1)">
                             <img id="moment-photo-2" 
-                                 src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" 
-                                 onerror="this.src='https://placehold.co/500x700/d8b4fe/581c87?text=Moment+02+%E2%9C%A8'"
+                                 src="ft4.jpeg" 
+                                 onerror="this.src='https://placehold.co/500x700/d8b4fe/581c87?text=Foto+Moment+02+%E2%9CA8'"
                                  alt="Moment 2">
                             <div class="stack-overlay bg-gradient-to-t from-purple-950/85 via-purple-950/20 to-transparent flex flex-col justify-between p-4 sm:p-5 text-left">
                                 <div class="flex justify-between items-center">
@@ -618,11 +616,11 @@
                             </div>
                         </article>
 
-                        <!-- Moment 3 -->
+                        <!-- Moment 3 (Ganti src dengan nama file foto ke-3 Anda) -->
                         <article class="stack-card is-prev" data-index="2" data-selected="false" onclick="selectStackCard(2)">
                             <img id="moment-photo-3" 
-                                 src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" 
-                                 onerror="this.src='https://placehold.co/500x700/c084fc/ffffff?text=Moment+03+%F0%9F%8E%80'"
+                                 src="ft2.jpeg" 
+                                 onerror="this.src='https://placehold.co/500x700/c084fc/ffffff?text=Foto+Moment+03+%F0%9F%8E%80'"
                                  alt="Moment 3">
                             <div class="stack-overlay bg-gradient-to-t from-purple-950/85 via-purple-950/20 to-transparent flex flex-col justify-between p-4 sm:p-5 text-left">
                                 <div class="flex justify-between items-center">
@@ -654,7 +652,7 @@
 
                 <!-- Keterangan Pembuat di Bagian Bawah Kartu -->
                 <div class="mt-4 text-xs text-purple-500 font-semibold">
-                    terus jadi ura yang suka purple yaa <span id="footer-creator-name" class="font-bold text-purple-700"></span>
+                    terus jadi uraa yang suka purple yaa <br> disinii biruu <span id="footer-creator-name" class="font-bold text-purple-700"></span>
                 </div>
 
                 <!-- Bottom Celebration & Navigation -->
@@ -694,19 +692,32 @@
         </div>
     </div>
 
+    <!-- ========================================================= -->
+    <!-- FLOATING TOAST NOTIFICATION                               -->
+    <!-- ========================================================= -->
+    <div id="toast-box" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300">
+        <div class="bg-purple-900/90 backdrop-blur-md text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xl border border-lilac-400/40 whitespace-nowrap">
+            <span id="toast-message">Make a wish! 💜</span>
+        </div>
+    </div>
+
     <!-- JAVASCRIPT LOGIC -->
     <script>
         // ==========================================
         // 1. STATE & DEFAULT LONGTEXT CONTENT
         // ==========================================
         let currentPage = 1;
-        let longTextMessage = `Happyy birthdayyy, Uraa — littlee purplee! 💜✨
+        let longTextMessage = `happyy birthdayyy — littlee purplee
+selamat bertambah usia.. ada banyak hal yang mungkin sudah kamu lewati sampai akhirnya berada di titik sekarang. hal-hal yang mungkin nggak semuanya bisa diceritakan, keputusan-keputusan yang nggak selalu mudah, dan berbagai keadaan yang mengajarkanmu banyak hal tentang kehidupan.
+di usia yang baru ini, aku berharap kamu bisa menjalani hidup dengan lebih banyak ketenangan, bukan karena semuanya selalu berjalan sesuai keinginan, tetapi karena kamu semakin mampu menerima dan menghadapi apa pun yang datang.
+aku harap kamu ngga hanya tumbuh menjadi seseorang yang semakin dewasa dalam berpikir, tetapi juga seseorang yang ngga lupa memberi ruang untuk dirinya sendiri. karena, terkadang kita terlalu sibuk memahami keadaan, memikirkan banyak hal, dan berusaha menjadi seseorang yang bisa diandalkan, sampai lupa bahwa diri sendiri juga perlu diperhatikan. nggak semua hal harus kamu pikirkan sendirian, nggak semua masalah harus selalu kamu selesaikan dalam satu waktu, dan nggak apa-apa kalau sesekali kamu memilih untuk beristirahat.
+untuk semua hal yang sedang kamu usahakan, semoga menemukan hasil yang sepadan. untuk semua doa yang belum terjawab, semoga kamu diberi kesabaran untuk menunggunya. dan untuk hal-hal yang memang tidak bisa kamu miliki, semoga kamu diberi kelapangan hati untuk menerimanya.
 
-Di hari yang spesial ini, aku cuma mau bilang terima kasih karena kamu sudah bertahan dan bertumbuh sejauh ini. Mungkin tidak semua langkah yang kamu lewati terasa ringan, tapi lihatlah dirimu sekarang—kamu jauh lebih kuat, lebih dewasa, dan lebih berharga dari yang sering kamu sadari.
+terakhir.. jangan terlalu sibuk mengejar masa depan sampai lupa menikmati kehidupan yang sedang kamu jalani sekarang. karena pada akhirnya, hidup bukan cuma tentang seberapa banyak pencapaian yang berhasil kita kumpulkan, tetapi juga tentang bagaimana kita menjalani setiap prosesnya dan siapa saja yang masih ada di sepanjang perjalanan.
 
-Di lembaran usia yang baru ini, jangan pernah takut untuk bermimpi besar dan melangkah pelan-pelan mengejarnya. Kalau suatu hari dunia terasa terlalu bising atau lelah, ingatlah untuk beristirahat sejenak tanpa merasa bersalah. Kamu tidak harus selalu sempurna untuk layak dicintai dan dibanggakan.
+selamat bertambah usia uraa.. Semoga kehidupan memperlakukanmu dengan baik, semoga langkahmu selalu punya arah, dan semoga kamu selalu punya alasan untuk merasa cukup dan bahagia. Kalau suatu hari nanti kamu melihat kembali perjalananmu hari ini, semoga kamu bisa tersenyum dan bangga pada dirimu sendiri, bukan hanya karena apa yang berhasil kamu capai, tetapi juga karena semua hal yang sudah berhasil kamu lewati.
 
-Semoga semesta selalu mendekatkanmu dengan ketenangan hati, kesempatan-kesempatan baik, serta orang-orang tulus yang selalu mendukungmu apa adanya. Teruslah bersinar dengan caramu sendiri ya, Uraa. You are doing great, and the best chapters of your life are just beginning! 🎂🌷🪻`;
+here's to another chapter of life. semoga cerita selanjutnya membawa lebih banyak hal baik daripada yang pernah kamu bayangkan.`;
 
         // ==========================================
         // 2. PAGE NAVIGATION WITH SMOOTH TRANSITION
@@ -900,21 +911,13 @@ Semoga semesta selalu mendekatkanmu dengan ketenangan hati, kesempatan-kesempata
             modal.classList.remove('flex');
         }
 
-        function saveCreatorName() {
-            const nameVal = document.getElementById('input-creator-name').value.trim() || 'Your Special Person';
-            document.getElementById('header-creator-name').textContent = nameVal;
-            document.getElementById('letter-creator-name').textContent = nameVal;
-            document.getElementById('footer-creator-name').textContent = nameVal;
-            closeCreatorModal();
-            showToast(`Nama pembuat kartu diperbarui menjadi "${nameVal}" 💜`);
-        }
-
         // ==========================================
         // 6. TOAST & CELEBRATION WISH
         // ==========================================
         let toastTimeout = null;
         function showToast(msg) {
             const toast = document.getElementById('toast-box');
+            if (!toast) return;
             document.getElementById('toast-message').textContent = msg;
             toast.classList.remove('opacity-0', 'translate-y-4');
             
